@@ -12,8 +12,6 @@
 }
 
 @media only screen and (min-width: 2000px) {
-    /* main article figure { grid-row: span 14} */
-    main article figure img { width: 120%;}
 }
 @media only screen and (min-width: 1460px) {
     .projects .grid-item {  flex-direction: column;  }
@@ -25,8 +23,7 @@
 @media only screen and (max-width: 1000px) {
     header { flex-direction: column; align-items: start;}
     header nav { width: 100%;}
-    main article figure {grid-row: 1 / span 3; }
-    main article > * {padding-right: 70px;}
+    main article > * {padding-right: 0px;}
 }
 
 @media only screen and (max-width: 925px) {
@@ -35,20 +32,7 @@
     }
 
     main article  {
-        display: block;
         background: var(--color-fond);
-        border-left: 1.5em solid var(--color-deux-fade);
-    }
-    main article figure  {
-        position: unset;
-        top: 0px;
-        background-color: var(--color-deux-fade);
-        padding: 1em 0;
-        margin: 1em auto;
-    }
-    main article figure img {
-        max-width: 60%;
-        padding-left: 45px;
     }
 
 }
@@ -78,11 +62,8 @@ section.welcome-tagline h1 { font-size: 1.7em;}
     display: none;
 }
 main article > * {
-    padding-right: 40px;
-    padding-left: 40px;
-}
-main article figure img {
-    max-width: 80%;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 
@@ -216,9 +197,6 @@ footer .column-2 .social { margin: 1em 0; }
     }
     .projects .grid-item {
         display: unset;
-    }
-    main article figure img {
-        padding: 0px;
     }
     hr {
         width: 150px;

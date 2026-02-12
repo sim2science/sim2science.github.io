@@ -129,7 +129,6 @@ h3 {
 h4 {
   margin: 1em 0 0.25em;
 }
-figure + h2,
 h1 + h2 {
   margin-top: 0px;
 }
@@ -242,35 +241,41 @@ figcaption {
   display: none;
 }
 main article  {
-  display: grid;
-  grid-template-columns: 2em [image-start] 1fr [image-end text-start] 2fr [text-end] 2em;
-  grid-column: art / text;
-  grid-row: rest;
-  background: linear-gradient(90deg, var(--color-une-fade) 34%, var(--color-fond) 0%);
-  padding-bottom: 4em;
-  padding-top: 2em;
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2em 1.5em 4em;
   min-height: 75vh;
-  align-content: flex-start;
+  text-align: left;
 }
 main article > * {
-  grid-column: text;
   max-width: unset !important;
-  padding-left: 70px;
 }
 main article figure  {
-  grid-column: image !important;
-  grid-row: 1 / span 5;
-  position: sticky;
-  top: 200px;
-  padding: 0px 25px 0px 0px;
-  margin: 0 auto;
+  display: none;
+}
+/* Person cards with headshots */
+.person-grid {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+.person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
-.about main article figure {
-  grid-row: 1 / span 7;
+.person-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5em;
 }
-main article figure img {
-  max-width: 90%;
+.person-card p {
+  margin: 0;
 }
 
 /* SUB-navigation ----------------------------------------*/
@@ -474,16 +479,6 @@ position: unset !important;
 .pro + .pro { margin-top: -1.5em; }
 
 /* Main article figure ----------------------------------------*/
-.contact main article figure img {
-  width: 500px;
-}
-.community main article figure {
-  grid-row: 1 / span 7;
-}
-.yourproject main article figure {
-  grid-row: 1 / span 7;
-  top: 100px;
-}
 
 /* HOMEPAGE ----------------------------------------*/
 .homepage main {
