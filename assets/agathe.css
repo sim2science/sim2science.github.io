@@ -277,6 +277,10 @@ main article figure  {
 .person-card p {
   margin: 0;
 }
+.person-card .affiliation {
+  font-size: 0.8em;
+  color: var(--color-trois);
+}
 
 /* SUB-navigation ----------------------------------------*/
 .sub-wrapper {
