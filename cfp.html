@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Call for Papers | Sim2Science ICML 2026 Workshop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Submit your paper to the Sim2Science ICML 2026 Workshop. We invite 5-page workshop papers and 2-page Tiny Papers.">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./assets/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./assets/css2" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/root.css">
+    <link rel="stylesheet" type="text/css" href="./assets/agathe.css">
+    <link rel="stylesheet" type="text/css" href="./assets/media.css">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        .track {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+        .track h3 {
+            margin-top: 0;
+            color: #1e40af;
+        }
+        /* Important Dates Box Styling (matching home page) */
+        .dates-box {
+            background: #f0f7ff;
+            border: 2px solid #2563eb;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 32px auto;
+            max-width: 700px;
+        }
+        .dates-box h3 {
+            margin-top: 0;
+            color: #1e40af;
+        }
+        .dates-box table {
+            width: 100%;
+            margin: 16px 0;
+        }
+        .dates-box table td {
+            padding: 8px 0;
+        }
+        .dates-box table td:first-child {
+            font-weight: 600;
+            width: 50%;
+        }
+        .dates-box .note {
+            font-size: 0.9em;
+            color: #64748b;
+            margin-top: 8px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="blind challenges community">
+<div id="container">
+    <header>
+        <div class="logo"><img src="./assets/ICML-logo.svg" alt="ICML 2026 Workshop"></div>
+        <nav>
+            <ul class="main-menu__wrapper">
+                <li class="top-menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                <li class="top-menu-item"><a href="program.html" class="menu-link">Program</a></li>
+                <li class="top-menu-item"><a href="cfp.html" class="menu-link">Call for Papers</a></li>
+            </ul>
+        </nav>
+        <button onclick="myFunction()" id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+        </button>
+        <div id="mobile-submenu" style="display:none" class="mobile-submenu">
+            <ul>
+                <li><a href="index.html" class="menu-link">Home</a></li>
+                <li><a href="program.html" class="menu-link">Program</a></li>
+                <li><a href="cfp.html" class="menu-link">Call for Papers</a></li>
+            </ul>
+        </div>
+        <script>
+            function myFunction() {
+                var e = document.getElementById("mobile-submenu");
+                e.style.display === "none" ? e.style.display = "block" : e.style.display = "none"
+            }
+        </script>
+    </header>
+    <main>
+        <article>
+            <h1>Call for Papers</h1>
+
+            <p>We invite contributions on theory and methods as well as applications spanning biology, chemistry, physics, materials science, climate science, and related fields.</p>
+
+            <!-- Submission Tracks -->
+            <h2>Submission Tracks</h2>
+
+            <div class="track">
+                <h3>1. Workshop Papers (5 pages)</h3>
+                <p>We invite 5-page workshop papers on methodological advances and domain-specific applications that bridge simulators or emulators with real-world data using machine learning. Original contributions and early research works are encouraged. Contributions presenting recently published or currently under review results are also welcome.</p>
+            </div>
+
+            <div class="track">
+                <h3>2. Tiny Papers (2 pages)</h3>
+                <p>We especially encourage 2-page extended abstracts (Tiny Papers) from under-represented, under-resourced, and budding researchers. These short contributions should address the same topics as workshop papers but in a more concise format, making research accessible to a broader community of participants.</p>
+            </div>
+
+            <!-- Topics of Interest -->
+            <h2>Topics of Interest</h2>
+            <ul>
+                <li>Simulation-based inference and related parameter inference methods</li>
+                <li>Understanding and mitigating model misspecification, including simulator diagnostics and discrepancy modeling</li>
+                <li>Emulator and surrogate modeling, as well as hybrid and physics-informed approaches</li>
+                <li>Analysis of simulator structure, degeneracy, simplifications, and identifiability</li>
+                <li>Simulator pipelines, including data handling, preprocessing, and integration with downstream ML models</li>
+                <li>Active learning and Bayesian optimization for fitting parameters or model components</li>
+                <li>Closed-loop and experiment-in-the-loop scientific workflows</li>
+                <li>Multi-fidelity and multi-resolution modeling</li>
+                <li>Model and equation discovery</li>
+                <li>Differentiable frameworks and LLM-assisted scientific reasoning</li>
+            </ul>
+
+            <!-- Submission Instructions -->
+            <h2>Submission Instructions</h2>
+            <ul>
+                <li><strong>Format:</strong> ICML 2026 LaTeX style (template will be provided)</li>
+                <li><strong>Length:</strong> 5 pages (excluding references) for workshop papers, or 2 pages (excluding references) for Tiny Papers</li>
+                <li><strong>Anonymization:</strong> Double-blind review required. Please anonymize your submission.</li>
+                <li><strong>Submission Portal:</strong> OpenReview (link will be posted when the workshop is accepted)</li>
+            </ul>
+
+            <!-- Review Process -->
+            <h2>Review Process</h2>
+            <p>We will use <strong>reciprocal reviewing</strong>, where one author of each submitted paper is asked to review 2 other submissions. This approach helps build community engagement and ensures timely reviews. Papers will be reviewed double-blind by program committee members, reciprocal reviewers, and organizers.</p>
+
+            <p><strong>Non-archival:</strong> The workshop will not have formal proceedings, but accepted submissions will be linked on the workshop webpage.</p>
+
+            <!-- Important Dates -->
+            <h2>Important Dates</h2>
+            <div class="dates-box">
+                <h3>Important Dates</h3>
+                <table>
+                    <tr>
+                        <td>Submission Deadline:</td>
+                        <td>April 24, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Author Notification:</td>
+                        <td>May 15, 2026</td>
+                    </tr>
+                    <tr>
+                        <td>Camera-Ready Deadline:</td>
+                        <td>TBD</td>
+                    </tr>
+                    <tr>
+                        <td>Workshop Date:</td>
+                        <td>July 2026, Seoul, South Korea</td>
+                    </tr>
+                </table>
+                <p class="note">All deadlines are 23:59 Anywhere on Earth (AOE)</p>
+            </div>
+
+            <!-- Contact -->
+            <h2>Questions?</h2>
+            <p>For questions about paper submissions, please contact us at <a href="mailto:sim2science@gmail.com">sim2science@gmail.com</a></p>
+
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="column-1">
+            <img id="logo-footer" src="./assets/ICML-logo.svg">
+            <p>Unless otherwise noted, all content is licensed under the <a style="text-decoration:underline" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 license.</a></p>
+        </div>
+        <div class="column-2">
+            <div class="social">
+                <a href="mailto:sim2science@gmail.com"><img src="./assets/mail-icon.png"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

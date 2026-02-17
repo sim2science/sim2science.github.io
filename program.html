@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Program | Sim2Science ICML 2026 Workshop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Program, speakers, and organizing committee for the Sim2Science ICML 2026 Workshop">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./assets/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./assets/css2" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/root.css">
+    <link rel="stylesheet" type="text/css" href="./assets/agathe.css">
+    <link rel="stylesheet" type="text/css" href="./assets/media.css">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        /* Schedule Table Styling */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+        }
+        .schedule-table thead {
+            background: #f1f5f9;
+        }
+        .schedule-table th,
+        .schedule-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .schedule-table th {
+            font-weight: 600;
+            color: #1e293b;
+        }
+        .schedule-table tbody tr:hover {
+            background: #f8fafc;
+        }
+        .schedule-table td:first-child {
+            font-weight: 600;
+            color: #2563eb;
+            white-space: nowrap;
+        }
+        .schedule-table tr.special-event {
+            background: #fef3c7;
+        }
+        .schedule-table tr.special-event:hover {
+            background: #fde68a;
+        }
+
+        /* Person Grid Styling */
+        .person-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+        .person-card {
+            text-align: center;
+            padding: 16px;
+        }
+        .person-card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.2s;
+        }
+        .person-card a:hover {
+            transform: translateY(-4px);
+        }
+        .person-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 12px;
+            cursor: pointer;
+        }
+        .person-card p {
+            margin: 8px 0;
+        }
+        .person-card .name {
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        .person-card .affiliation {
+            color: #64748b;
+            font-size: 0.9em;
+        }
+
+        .note {
+            font-style: italic;
+            color: #64748b;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body class="blind challenges community">
+<div id="container">
+    <header>
+        <div class="logo"><img src="./assets/ICML-logo.svg" alt="ICML 2026 Workshop"></div>
+        <nav>
+            <ul class="main-menu__wrapper">
+                <li class="top-menu-item"><a href="index.html" class="menu-link">Home</a></li>
+                <li class="top-menu-item"><a href="program.html" class="menu-link">Program</a></li>
+                <li class="top-menu-item"><a href="cfp.html" class="menu-link">Call for Papers</a></li>
+            </ul>
+        </nav>
+        <button onclick="myFunction()" id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+        </button>
+        <div id="mobile-submenu" style="display:none" class="mobile-submenu">
+            <ul>
+                <li><a href="index.html" class="menu-link">Home</a></li>
+                <li><a href="program.html" class="menu-link">Program</a></li>
+                <li><a href="cfp.html" class="menu-link">Call for Papers</a></li>
+            </ul>
+        </div>
+        <script>
+            function myFunction() {
+                var e = document.getElementById("mobile-submenu");
+                e.style.display === "none" ? e.style.display = "block" : e.style.display = "none"
+            }
+        </script>
+    </header>
+    <main>
+        <article>
+            <h1>Program</h1>
+
+            <!-- Tentative Schedule -->
+            <h2>Tentative Schedule</h2>
+            <p class="note">Subject to change. All times are in local time (Seoul, KST).</p>
+
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Event</th>
+                        <th>Speaker/Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00</td>
+                        <td>Invited Talk 1</td>
+                        <td><strong>Shirley Ho</strong> (Polymathic / NYU)</td>
+                    </tr>
+                    <tr>
+                        <td>08:30</td>
+                        <td>Contributed Talks</td>
+                        <td>2 × 15-minute presentations</td>
+                    </tr>
+                    <tr>
+                        <td>09:00</td>
+                        <td>Invited Talk 2</td>
+                        <td><strong>Jonas Köhler</strong> (CuspAI)</td>
+                    </tr>
+                    <tr>
+                        <td>09:30</td>
+                        <td>Coffee Break</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>09:45</td>
+                        <td>Invited Talk 3</td>
+                        <td><strong>Pablo Samuel Castro</strong> (Google DeepMind)</td>
+                    </tr>
+                    <tr>
+                        <td>10:15</td>
+                        <td>Contributed Talk</td>
+                        <td>1 × 15-minute presentation</td>
+                    </tr>
+                    <tr>
+                        <td>10:30</td>
+                        <td>Invited Talk 4</td>
+                        <td><strong>Marta Skreta</strong> (Mila)</td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td>Posters</td>
+                        <td>Morning poster session</td>
+                    </tr>
+                    <tr class="special-event">
+                        <td>12:00</td>
+                        <td>Mentorship & Networking Lunch</td>
+                        <td>Unconference format with senior researchers</td>
+                    </tr>
+                    <tr>
+                        <td>14:00</td>
+                        <td>Invited Talk 5</td>
+                        <td><strong>Santiago Cadena</strong> (Proxima Fusion)</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>Contributed Talks</td>
+                        <td>2 × 15-minute presentations</td>
+                    </tr>
+                    <tr>
+                        <td>15:00</td>
+                        <td>Invited Talk 6</td>
+                        <td><strong>Petros Koumoutsakos</strong> (Harvard University)</td>
+                    </tr>
+                    <tr>
+                        <td>15:30</td>
+                        <td>Posters & Coffee Break</td>
+                        <td>Afternoon poster session</td>
+                    </tr>
+                    <tr class="special-event">
+                        <td>16:30</td>
+                        <td>Speaker Panel</td>
+                        <td>All invited speakers</td>
+                    </tr>
+                    <tr>
+                        <td>17:00</td>
+                        <td>Closing Remarks</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Invited Speakers -->
+            <h2>Invited Speakers</h2>
+
+            <div class="person-grid">
+                <div class="person-card">
+                    <a href="https://www.shirleyho.space" target="_blank" rel="noopener" title="Shirley Ho">
+                        <img src="./assets/shirley-ho.jpg" alt="Shirley Ho">
+                        <p class="name">Shirley Ho</p>
+                        <p class="affiliation">Polymathic AI / New York University</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://argmin.xyz" target="_blank" rel="noopener" title="Jonas Köhler">
+                        <img src="./assets/jonas-kohler.jpeg" alt="Jonas Köhler">
+                        <p class="name">Jonas Köhler</p>
+                        <p class="affiliation">CuspAI</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://psc-g.github.io" target="_blank" rel="noopener" title="Pablo Samuel Castro">
+                        <img src="./assets/pablosamuelcastro.jpeg.webp" alt="Pablo Samuel Castro">
+                        <p class="name">Pablo Samuel Castro</p>
+                        <p class="affiliation">Google DeepMind</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://martaskreta.notion.site" target="_blank" rel="noopener" title="Marta Skreta">
+                        <img src="./assets/marta-skreta.webp" alt="Marta Skreta">
+                        <p class="name">Marta Skreta</p>
+                        <p class="affiliation">Mila</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://sacadena.github.io" target="_blank" rel="noopener" title="Santiago Cadena">
+                        <img src="./assets/santiago-cadena.jpeg" alt="Santiago Cadena">
+                        <p class="name">Santiago Cadena</p>
+                        <p class="affiliation">Proxima Fusion</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://seas.harvard.edu/person/petros-koumoutsakos" target="_blank" rel="noopener" title="Petros Koumoutsakos">
+                        <img src="./assets/PetrosKoumoutsakos-768x512-1.png" alt="Petros Koumoutsakos">
+                        <p class="name">Petros Koumoutsakos</p>
+                        <p class="affiliation">Harvard University</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Special Events (commented out as requested) -->
+            <!--
+            <h2>Special Events</h2>
+
+            <h3>Mentorship & Networking Lunch</h3>
+            <p>We will organize a catered lunch (~80 participant capacity) with an unconference format. Participants propose discussion topics during morning sessions, and senior researchers (speakers, advisors, organizers) circulate as mentors. This session facilitates cross-disciplinary exchange and networking in an informal setting.</p>
+
+            <h3>Panel Discussion</h3>
+            <p>The workshop concludes with a panel featuring all invited speakers, following a structured format of lightning rounds (45-second responses) followed by moderated discussion.</p>
+            -->
+
+            <!-- Organizing Committee -->
+            <h2>Organizing Committee</h2>
+
+            <div class="person-grid">
+                <div class="person-card">
+                    <a href="http://georgiachanning.com/" target="_blank" rel="noopener" title="Georgia Channing">
+                        <img src="./assets/georgia.jpg" alt="Georgia Channing">
+                        <p class="name">Georgia Channing</p>
+                        <p class="affiliation">Hugging Face</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://noemielteto.github.io" target="_blank" rel="noopener" title="Noémi Éltetö">
+                        <img src="./assets/noemi.jpg" alt="Noémi Éltetö">
+                        <p class="name">Noémi Éltetö</p>
+                        <p class="affiliation">Google DeepMind</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://www.gao-unit.com" target="_blank" rel="noopener" title="Richard Gao">
+                        <img src="./assets/richard.jpg" alt="Richard Gao">
+                        <p class="name">Richard Gao</p>
+                        <p class="affiliation">Goethe University Frankfurt</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://dgedon.github.io" target="_blank" rel="noopener" title="Daniel Gedon">
+                        <img src="./assets/daniel2.jpg" alt="Daniel Gedon">
+                        <p class="name">Daniel Gedon</p>
+                        <p class="affiliation">University of Tübingen</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://mlederbauer.com" target="_blank" rel="noopener" title="Magdalena Lederbauer">
+                        <img src="./assets/magdalena-lederbauer.jpeg" alt="Magdalena Lederbauer">
+                        <p class="name">Magdalena Lederbauer</p>
+                        <p class="affiliation">MIT</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Scientific Advisors -->
+            <h2>Scientific Advisors</h2>
+
+            <div class="person-grid">
+                <div class="person-card">
+                    <a href="https://www.physik.fu-berlin.de/en/einrichtungen/ag/ag-clementi/index.html" target="_blank" rel="noopener" title="Cecilia Clementi">
+                        <img src="./assets/cecilia-clementi.jpg" alt="Cecilia Clementi">
+                        <p class="name">Cecilia Clementi</p>
+                        <p class="affiliation">Freie Universität Berlin; Rice University</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://mackelab.org" target="_blank" rel="noopener" title="Jakob Macke">
+                        <img src="./assets/JakobMacke.jpg" alt="Jakob Macke">
+                        <p class="name">Jakob Macke</p>
+                        <p class="affiliation">University of Tübingen</p>
+                    </a>
+                </div>
+                <div class="person-card">
+                    <a href="https://amlab.science.uva.nl/people/MaxWelling/" target="_blank" rel="noopener" title="Max Welling">
+                        <img src="./assets/max-welling.jpg" alt="Max Welling">
+                        <p class="name">Max Welling</p>
+                        <p class="affiliation">University of Amsterdam; CuspAI</p>
+                    </a>
+                </div>
+            </div>
+
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="column-1">
+            <img id="logo-footer" src="./assets/ICML-logo.svg">
+            <p>Unless otherwise noted, all content is licensed under the <a style="text-decoration:underline" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 license.</a></p>
+        </div>
+        <div class="column-2">
+            <div class="social">
+                <a href="mailto:sim2science@gmail.com"><img src="./assets/mail-icon.png"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
