@@ -10,98 +10,19 @@
     <link rel="stylesheet" href="./assets/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./assets/css2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/root.css">
     <link rel="stylesheet" type="text/css" href="./assets/agathe.css">
     <link rel="stylesheet" type="text/css" href="./assets/media.css">
+    <link rel="stylesheet" type="text/css" href="./assets/pages.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/event.svg">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <style>
-        /* Schedule Table Styling */
-        .schedule-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 24px 0;
-        }
-        .schedule-table thead {
-            background: #f1f5f9;
-        }
-        .schedule-table th,
-        .schedule-table td {
-            padding: 12px 16px;
-            text-align: left;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        .schedule-table th {
-            font-weight: 600;
-            color: #1e293b;
-        }
-        .schedule-table tbody tr:hover {
-            background: #f8fafc;
-        }
-        .schedule-table td:first-child {
-            font-weight: 600;
-            color: #2563eb;
-            white-space: nowrap;
-        }
-        .schedule-table tr.special-event {
-            background: #fef3c7;
-        }
-        .schedule-table tr.special-event:hover {
-            background: #fde68a;
-        }
-
-        /* Person Grid Styling */
-        .person-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
-            margin: 32px 0;
-        }
-        .person-card {
-            text-align: center;
-            padding: 16px;
-        }
-        .person-card a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            transition: transform 0.2s;
-        }
-        .person-card a:hover {
-            transform: translateY(-4px);
-        }
-        .person-card img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 12px;
-            cursor: pointer;
-        }
-        .person-card p {
-            margin: 8px 0;
-        }
-        .person-card .name {
-            font-weight: 600;
-            font-size: 1.1em;
-        }
-        .person-card .affiliation {
-            color: #64748b;
-            font-size: 0.9em;
-        }
-
-        .note {
-            font-style: italic;
-            color: #64748b;
-            font-size: 0.95em;
-        }
-    </style>
 </head>
 <body class="blind challenges community">
 <div id="container">
     <header>
-        <div class="logo"><img src="./assets/NeurIPS-logo.svg" alt="NeurIPS 2026 Workshop"></div>
+        <div class="logo site-title">Sim2Science</div>
         <nav>
             <ul class="main-menu__wrapper">
                 <li class="top-menu-item"><a href="index.html" class="menu-link">Home</a></li>
@@ -129,10 +50,11 @@
     <main>
         <article>
             <h1>Program</h1>
+            <p class="note">NeurIPS 2026 Workshop &middot; Paris, France &middot; December 12 or 13, 2026 (exact day TBD)</p>
 
             <!-- Tentative Schedule -->
             <h2>Tentative Schedule</h2>
-            <p class="note">Subject to change. All times are tentative; venue TBD.</p>
+            <p class="note">Subject to change. All times are tentative.</p>
 
             <table class="schedule-table">
                 <thead>
@@ -269,17 +191,6 @@
                 </div>
             </div>
 
-            <!-- Special Events (commented out as requested) -->
-            <!--
-            <h2>Special Events</h2>
-
-            <h3>Mentorship & Networking Lunch</h3>
-            <p>We will organize a catered lunch (~80 participant capacity) with an unconference format. Participants propose discussion topics during morning sessions, and senior researchers (speakers, advisors, organizers) circulate as mentors. This session facilitates cross-disciplinary exchange and networking in an informal setting.</p>
-
-            <h3>Panel Discussion</h3>
-            <p>The workshop concludes with a panel featuring all invited speakers, following a structured format of lightning rounds (45-second responses) followed by moderated discussion.</p>
-            -->
-
             <!-- Organizing Committee -->
             <h2>Organizing Committee</h2>
 
@@ -352,12 +263,15 @@
     </main>
     <footer class="footer">
         <div class="column-1">
-            <img id="logo-footer" src="./assets/NeurIPS-logo.svg">
             <p>Unless otherwise noted, all content is licensed under the <a style="text-decoration:underline" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 license.</a></p>
         </div>
         <div class="column-2">
             <div class="social">
-                <a href="mailto:sim2science@gmail.com"><img src="./assets/mail-icon.png"></a>
+                <a href="mailto:sim2science@gmail.com" title="Email"><img src="./assets/mail-icon.png" alt="Email"></a>
+                <!-- LinkedIn/Bluesky accounts don't exist yet - re-enable once created
+                <a href="#" target="_blank" rel="noopener" title="LinkedIn"><img src="./assets/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#" target="_blank" rel="noopener" title="Bluesky"><img src="./assets/bluesky-icon.png" alt="Bluesky"></a>
+                -->
             </div>
         </div>
     </footer>

@@ -201,4 +201,13 @@ footer .column-2 .social { margin: 1em 0; }
     hr {
         width: 150px;
     }
+    :root {
+        --font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    :root {
+        --font-size: 15px;
+    }
 }

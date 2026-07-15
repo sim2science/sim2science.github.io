@@ -10,60 +10,19 @@
     <link rel="stylesheet" href="./assets/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./assets/css2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/root.css">
     <link rel="stylesheet" type="text/css" href="./assets/agathe.css">
     <link rel="stylesheet" type="text/css" href="./assets/media.css">
+    <link rel="stylesheet" type="text/css" href="./assets/pages.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/event.svg">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <style>
-        .track {
-            background: #f8fafc;
-            border-left: 4px solid #2563eb;
-            padding: 20px;
-            margin: 24px 0;
-            border-radius: 4px;
-        }
-        .track h3 {
-            margin-top: 0;
-            color: #1e40af;
-        }
-        /* Important Dates Box Styling (matching home page) */
-        .dates-box {
-            background: #f0f7ff;
-            border: 2px solid #2563eb;
-            border-radius: 8px;
-            padding: 24px;
-            margin: 32px auto;
-            max-width: 700px;
-        }
-        .dates-box h3 {
-            margin-top: 0;
-            color: #1e40af;
-        }
-        .dates-box table {
-            width: 100%;
-            margin: 16px 0;
-        }
-        .dates-box table td {
-            padding: 8px 0;
-        }
-        .dates-box table td:first-child {
-            font-weight: 600;
-            width: 50%;
-        }
-        .dates-box .note {
-            font-size: 0.9em;
-            color: #64748b;
-            margin-top: 8px;
-            font-style: italic;
-        }
-    </style>
 </head>
 <body class="blind challenges community">
 <div id="container">
     <header>
-        <div class="logo"><img src="./assets/NeurIPS-logo.svg" alt="NeurIPS 2026 Workshop"></div>
+        <div class="logo site-title">Sim2Science</div>
         <nav>
             <ul class="main-menu__wrapper">
                 <li class="top-menu-item"><a href="index.html" class="menu-link">Home</a></li>
@@ -92,7 +51,7 @@
         <article>
             <h1>Call for Papers</h1>
 
-            <p>We invite contributions on theory and methods as well as applications spanning biology, chemistry, physics, materials science, climate science, and related fields.</p>
+            <p>We welcome both <strong>methods papers</strong> &mdash; novel algorithms and theory for detecting, absorbing, and correcting simulator misspecification &mdash; and <strong>application papers</strong> &mdash; case studies bridging simulators or emulators with real-world data &mdash; from essentially any scientific domain, including biology, chemistry, physics, materials science, and climate science.</p>
 
             <!-- Submission Tracks -->
             <h2>Submission Tracks</h2>
@@ -109,26 +68,16 @@
 
             <!-- Topics of Interest -->
             <h2>Topics of Interest</h2>
-            <ul>
-                <li>Simulation-based inference and related parameter inference methods</li>
-                <li>Understanding and mitigating model misspecification, including simulator diagnostics and discrepancy modeling</li>
-                <li>Emulator and surrogate modeling, as well as hybrid and physics-informed approaches</li>
-                <li>Analysis of simulator structure, degeneracy, simplifications, and identifiability</li>
-                <li>Simulator pipelines, including data handling, preprocessing, and integration with downstream ML models</li>
-                <li>Active learning and Bayesian optimization for fitting parameters or model components</li>
-                <li>Closed-loop and experiment-in-the-loop scientific workflows</li>
-                <li>Multi-fidelity and multi-resolution modeling</li>
-                <li>(Agentic) model and equation discovery</li>
-                <li>Differentiable frameworks, LLM-assisted scientific reasoning, and workflow automation</li>
-            </ul>
+            <p>See the full <a href="index.html#topics">list of topics</a> on the Home page.</p>
 
-            <!-- Submission Instructions -->
-            <h2>Submission Instructions</h2>
+            <!-- Contribution Guide -->
+            <h2>Contribution Guide</h2>
             <ul>
-                <li><strong>Format:</strong> NeurIPS 2026 LaTeX style (template will be provided)</li>
+                <li><strong>Format:</strong> NeurIPS 2026 LaTeX style (template will be linked here once published)</li>
                 <li><strong>Length:</strong> 5 pages (excluding references) for workshop papers, or 2 pages (excluding references) for Tiny Papers</li>
-                <li><strong>Anonymization:</strong> Double-blind review required. Please anonymize your submission.</li>
-                <li><strong>Submission Portal:</strong> OpenReview (link will be posted when the workshop is accepted)</li>
+                <li><strong>Anonymization:</strong> Double-blind review required &mdash; please anonymize your submission (no author names/affiliations, avoid self-identifying references)</li>
+                <li><strong>Checklist:</strong> we follow the NeurIPS-style reproducibility checklist; details will be posted alongside the LaTeX template</li>
+                <li><strong>Submission Portal:</strong> OpenReview (link will be posted once available)</li>
             </ul>
 
             <!-- Review Process -->
@@ -137,6 +86,33 @@
 
             <p><strong>Non-archival:</strong> The workshop will not have formal proceedings, but accepted submissions will be linked on the workshop webpage.</p>
 
+            <div class="callout">
+                <p><strong>Want to review for Sim2Science?</strong> We are recruiting program committee members alongside reciprocal reviewers. If you'd like to volunteer, email us at <a href="mailto:sim2science@gmail.com?subject=Reviewer%20sign-up">sim2science@gmail.com</a> with your area(s) of expertise.</p>
+            </div>
+
+            <!-- FAQ -->
+            <h2>FAQ</h2>
+            <details class="faq-item">
+                <summary>Do I need a full paper to submit, or is an abstract enough?</summary>
+                <p>Full 5-page (workshop paper) or 2-page (Tiny Paper) submissions are required by the submission deadline &mdash; we do not have a separate abstract-only deadline.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Can I attend without submitting a paper?</summary>
+                <p>Yes. The workshop is open to all registered NeurIPS 2026 attendees, with or without a submission.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Is the workshop archival? Can I submit this work elsewhere later?</summary>
+                <p>Sim2Science is non-archival &mdash; there are no formal proceedings, so accepted work remains eligible for submission to archival venues afterward.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Can I submit work that is already published or under review elsewhere?</summary>
+                <p>Yes. We welcome recently published results and work currently under review, alongside original contributions.</p>
+            </details>
+            <details class="faq-item">
+                <summary>How can I get involved beyond submitting a paper?</summary>
+                <p>Reach out to <a href="mailto:sim2science@gmail.com">sim2science@gmail.com</a> &mdash; we're recruiting reviewers and are happy to hear from prospective sponsors or volunteers.</p>
+            </details>
+
             <!-- Important Dates -->
             <h2>Important Dates</h2>
             <div class="dates-box">
@@ -144,22 +120,22 @@
                 <table>
                     <tr>
                         <td>Submission Deadline:</td>
-                        <td>TBD</td>
+                        <td>August 29, 2026</td>
                     </tr>
                     <tr>
                         <td>Author Notification:</td>
-                        <td>TBD</td>
+                        <td>September 29, 2026</td>
                     </tr>
                     <tr>
                         <td>Camera-Ready Deadline:</td>
-                        <td>TBD</td>
+                        <td>TBD (shortly before the workshop)</td>
                     </tr>
                     <tr>
                         <td>Workshop Date:</td>
-                        <td>December 2026, TBD</td>
+                        <td>December 12 or 13, 2026, Paris, France</td>
                     </tr>
                 </table>
-                <p class="note">All deadlines are 23:59 Anywhere on Earth (AOE)</p>
+                <p class="note">All deadlines are 23:59 Anywhere on Earth (AoE).</p>
             </div>
 
             <!-- Contact -->
@@ -170,12 +146,15 @@
     </main>
     <footer class="footer">
         <div class="column-1">
-            <img id="logo-footer" src="./assets/NeurIPS-logo.svg">
             <p>Unless otherwise noted, all content is licensed under the <a style="text-decoration:underline" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 license.</a></p>
         </div>
         <div class="column-2">
             <div class="social">
-                <a href="mailto:sim2science@gmail.com"><img src="./assets/mail-icon.png"></a>
+                <a href="mailto:sim2science@gmail.com" title="Email"><img src="./assets/mail-icon.png" alt="Email"></a>
+                <!-- LinkedIn/Bluesky accounts don't exist yet - re-enable once created
+                <a href="#" target="_blank" rel="noopener" title="LinkedIn"><img src="./assets/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#" target="_blank" rel="noopener" title="Bluesky"><img src="./assets/bluesky-icon.png" alt="Bluesky"></a>
+                -->
             </div>
         </div>
     </footer>

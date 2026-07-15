@@ -19,53 +19,19 @@
     <link rel="stylesheet" href="./assets/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./assets/css2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/root.css">
     <link rel="stylesheet" type="text/css" href="./assets/agathe.css">
     <link rel="stylesheet" type="text/css" href="./assets/media.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://huggingface.github.io/MecCog-Challenge-Site/dead">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://huggingface.github.io/MecCog-Challenge-Site/dead.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://huggingface.github.io/MecCog-Challenge-Site/dead.png">
-    <link rel="manifest" href="https://huggingface.github.io/MecCog-Challenge-Site/dead.manifest">
+    <link rel="stylesheet" type="text/css" href="./assets/pages.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/event.svg">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <style>
-        /* Important Dates Box Styling */
-        .dates-box {
-            background: #f0f7ff;
-            border: 2px solid #2563eb;
-            border-radius: 8px;
-            padding: 24px;
-            margin: 32px auto;
-            max-width: 700px;
-        }
-        .dates-box h3 {
-            margin-top: 0;
-            color: #1e40af;
-        }
-        .dates-box table {
-            width: 100%;
-            margin: 16px 0;
-        }
-        .dates-box table td {
-            padding: 8px 0;
-        }
-        .dates-box table td:first-child {
-            font-weight: 600;
-            width: 50%;
-        }
-        .dates-box .note {
-            font-size: 0.9em;
-            color: #64748b;
-            margin-top: 8px;
-            font-style: italic;
-        }
-    </style>
 </head>
 <body class="blind challenges community">
 <div id="container">
     <header>
-        <div class="logo"><img src="./assets/NeurIPS-logo.svg" alt="NeurIPS 2026 Workshop"></div>
+        <div class="logo site-title">Sim2Science</div>
         <nav>
             <ul class="main-menu__wrapper">
                 <li class="top-menu-item"><a href="index.html" class="menu-link">Home</a></li>
@@ -92,40 +58,33 @@
     </header>
     <main>
         <article>
-            <h1>Sim2Science: ML with Imperfect Scientific Models</h1>
-            <p class="subtitle"><strong>NeurIPS 2026 Workshop | Venue TBD</strong></p>
+            <!-- Hero -->
+            <div class="hero">
+                <h1>Sim2Science: ML with Imperfect Scientific Models</h1>
+                <p class="tagline">Cross-domain machine learning for imperfect, misspecified scientific simulators.</p>
+                <p class="facts">NeurIPS 2026 Workshop &middot; Paris, France &middot; December 12 or 13, 2026 (exact day TBD)</p>
+            </div>
 
             <!-- Important Dates Box -->
             <div class="dates-box">
                 <h3>Important Dates</h3>
                 <table>
-                    <tr><td>Submission Deadline:</td><td>TBD</td></tr>
-                    <tr><td>Author Notification:</td><td>TBD</td></tr>
-                    <tr><td>Camera-Ready Deadline:</td><td>TBD</td></tr>
-                    <tr><td>Workshop Date:</td><td>December 2026, TBD</td></tr>
+                    <tr><td>Submission Deadline:</td><td>August 29, 2026</td></tr>
+                    <tr><td>Author Notification:</td><td>September 29, 2026</td></tr>
+                    <tr><td>Camera-Ready Deadline:</td><td>TBD (shortly before the workshop)</td></tr>
+                    <tr><td>Workshop Date:</td><td>December 12 or 13, 2026, Paris, France</td></tr>
                 </table>
-                <p class="note">All deadlines are 23:59 Anywhere on Earth (AOE)</p>
+                <p class="note">All deadlines are 23:59 Anywhere on Earth (AoE).</p>
             </div>
 
             <!-- About the Workshop -->
             <h2>About the Workshop</h2>
-            <p>AI4Science has matured into an established field, with ML now embedded throughout the simulator-based workflows of the natural sciences. Much of this progress runs through <em>simulators</em>—mechanistic models hand-crafted by domain experts and fit to data—that encode our scientific theories and underpin prediction, parameter inference, experimentation, and decision-making. Across fields, ML now accelerates, emulates, and infers within these simulator-based workflows.</p>
+            <p>AI4Science has matured into an established field, with ML now embedded throughout the simulator-based workflows of the natural sciences. Much of this progress runs through <em>simulators</em>&mdash;mechanistic models hand-crafted by domain experts and fit to data&mdash;that encode our scientific theories and underpin prediction, parameter inference, experimentation, and decision-making. Yet an ML method coupled to a simulator is only as good as that simulator: simulators simplify complex systems, omit intractable physics, and depend on uncertain parameters, creating a discrepancy between simulated and observed data that biases the scientific conclusions we draw.</p>
 
-            <p>Yet the progress of ML in science rests on a fragile foundation. <em>"All models are wrong, but some are useful"</em> cuts to the core of AI4Science: an ML method coupled to a simulator can only be as good as that simulator. Simulators are wrong for concrete reasons—they deliberately simplify complex systems, omit poorly understood or computationally intractable physics, and depend on uncertain parameters—inducing an unavoidable discrepancy between simulated and observed data. Left unaccounted for, this discrepancy propagates through the coupled ML–simulator system and biases the scientific conclusions we draw and the real-world decisions we make from it.</p>
-
-            <p>Scientists manage this wrongness by maintaining, for the <em>same</em> phenomenon, a <em>hierarchy</em> of simulators at different fidelities. In chemistry and materials, density-functional theory spans a hierarchy of exchange–correlation functionals and basis sets, with classical force fields as a cheaper tier. In fusion, fast core-transport simulators stand alongside high-fidelity turbulence simulations. In neuroscience, detailed biophysical circuit models reduce to point-neuron and mean-field approximations. The same pattern recurs in climate, astrophysics, and fluid dynamics. Although the sources of wrongness differ, these hierarchies share a vocabulary—<em>multi-fidelity</em> and <em>multi-resolution</em> modelling—and feed the same downstream tasks: parameter and state inference, uncertainty quantification, control, and decision-making.</p>
-
-            <p>The central question of this workshop is: <strong>How can we best leverage imperfect scientific simulators when confronted with real-world data, and how can ML help to account for and mitigate limitations in simulator-based workflows across a wide range of domains?</strong></p>
-
-            <p>We pursue two complementary aims:</p>
-            <ul>
-                <li><strong>(i)</strong> to define how machine learning can systematically detect, absorb, and correct model misspecification when integrating simulators with empirical data, and</li>
-                <li><strong>(ii)</strong> to foster cross-domain synergy by establishing a shared understanding of how simulator discrepancies are identified and quantified across the natural sciences.</li>
-            </ul>
-            <p><em>Tagline: Cross-domain machine learning for imperfect, misspecified scientific simulators.</em></p>
+            <p>The central question of this workshop is: <strong>How can we best leverage imperfect scientific simulators when confronted with real-world data, and how can ML help to account for and mitigate limitations in simulator-based workflows across a wide range of domains?</strong> Sim2Science is deliberately <strong>cross-domain</strong>: rather than focusing on a single scientific field, we bring together researchers who each maintain hierarchies of simulators at different fidelities&mdash;in chemistry, fusion, neuroscience, climate, and beyond&mdash;to build a shared vocabulary and toolkit for handling imperfect simulators, so that progress in one field can transfer to others.</p>
 
             <!-- Topics of Interest -->
-            <h2>Topics of Interest</h2>
+            <h2 id="topics">Topics of Interest</h2>
             <p>We invite contributions on theory and methods as well as applications spanning biology, chemistry, physics, materials science, climate science, and related fields. Topics include:</p>
             <ul>
                 <li>Simulation-based inference and related parameter inference methods</li>
@@ -139,6 +98,15 @@
                 <li>(Agentic) model and equation discovery</li>
                 <li>Differentiable frameworks, LLM-assisted scientific reasoning, and workflow automation</li>
             </ul>
+            <p>Full submission tracks and instructions are on the <a href="cfp.html">Call for Papers</a> page.</p>
+
+            <!-- Sponsors -->
+            <h2>Sponsors</h2>
+            <p>We gratefully acknowledge confirmed sponsorship from:</p>
+            <div class="sponsor-logos">
+                <a href="https://huggingface.co" target="_blank" rel="noopener" title="Hugging Face"><img src="./assets/hf-logo.svg" alt="Hugging Face"></a>
+                <a href="https://deepmind.google" target="_blank" rel="noopener" title="Google DeepMind"><img src="./assets/deepmind-logo.svg" alt="Google DeepMind"></a>
+            </div>
 
             <!-- Contact -->
             <h2>Contact</h2>
@@ -149,12 +117,15 @@
     </main>
     <footer class="footer">
         <div class="column-1">
-            <img id="logo-footer" src="./assets/NeurIPS-logo.svg">
             <p>Unless otherwise noted, all content is licensed under the <a style="text-decoration:underline" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 license.</a></p>
         </div>
         <div class="column-2">
             <div class="social">
-                <a href="mailto:sim2science@gmail.com"><img src="./assets/mail-icon.png"></a>
+                <a href="mailto:sim2science@gmail.com" title="Email"><img src="./assets/mail-icon.png" alt="Email"></a>
+                <!-- LinkedIn/Bluesky accounts don't exist yet - re-enable once created
+                <a href="#" target="_blank" rel="noopener" title="LinkedIn"><img src="./assets/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#" target="_blank" rel="noopener" title="Bluesky"><img src="./assets/bluesky-icon.png" alt="Bluesky"></a>
+                -->
             </div>
         </div>
     </footer>

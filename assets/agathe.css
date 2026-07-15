@@ -105,7 +105,7 @@ h1,
 h2,
 h3 {
     font-family: var(--font-titre);
-    font-weight: 100;
+    font-weight: 600;
 }
 h1 {
     font-size: 2em;

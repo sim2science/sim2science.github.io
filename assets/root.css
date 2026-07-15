@@ -18,47 +18,9 @@
     --color-bpc: #f5f5f5; /* background for secondary panels */
     --color-westpa: #bdbdbd; /* subtle gray/purple replacement */
 
-    --font-titre: "Barlow", sans-serif;
-    --font-texte: "Barlow", monospace;
+    --font-titre: "Inter", sans-serif;
+    --font-texte: "Inter", sans-serif;
 
-    --font-size: 22px;
-    --line-height: 1.4;
+    --font-size: 18px;
+    --line-height: 1.5;
 }
-  @font-face {
-    font-family: "Barlow";
-    src: url("../fonts/Barlow-Regular.ttf") format("opentype");
-    font-style: normal;
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: "Barlow";
-    src: url("../fonts/Barlow-Italic.ttf") format("opentype");
-    font-style: italic;
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: "Barlow";
-    src: url("../fonts/Barlow-SemiBold.ttf") format("opentype");
-    font-style: normal;
-    font-weight: 600;
-  }
-  @font-face {
-    font-family: "Barlow";
-    src: url("../fonts/Barlow-SemiBoldItalic.ttf") format("opentype");
-    font-style: italic;
-    font-weight: 600;
-  }
- /* 
-  Sligoil by Ariel Martín Pérez. Distributed by velvetyne.fr.
-@font-face {
-    font-family: "Sligoil";
-    src: url("../fonts/Sligoil-Micro.otf") format("opentype");
-    font-style: normal;
-    font-weight: 400;
-  }
-  @font-face {
-    font-family: "Fira Code";
-    src: url("../fonts/FiraCode-VariableFont_wght.ttf") format("opentype");
-    font-style: normal;
-    font-weight: 300 - 700;
-  }*/
