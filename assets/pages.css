@@ -201,6 +201,11 @@ footer .social img {
     height: 24px;
 }
 
+/* Keep anchor targets clear of the sticky header */
+article [id] {
+    scroll-margin-top: 120px;
+}
+
 /* Deadline extension: old date struck out, new date highlighted */
 .date-old {
     color: #94a3b8;
@@ -209,6 +214,5 @@ footer .social img {
     margin-right: 6px;
 }
 .date-new {
-    color: #b91c1c;
     font-weight: 700;
 }
